@@ -14,9 +14,9 @@ while seguir == "si":
     edad = int(input("Edad: "))
 
     print("\nPlanes")
-    print("1. Básico")
-    print("2. Premium")
-    print("3. Familiar")
+    print("1. Básico: 50000")
+    print("2. Premium: 90000")
+    print("3. Familiar: 130000")
 
     plan = int(input("Seleccione plan: "))
 
