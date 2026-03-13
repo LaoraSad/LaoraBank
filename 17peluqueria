@@ -1,0 +1,47 @@
+print("---- BIENVENIDO A PELUQUERÍA LAORA----\n")
+
+total_dia = 0
+
+corte = 0
+cepillado = 0
+tintura = 0
+
+for i in range(1,8,1):
+
+    nombre = input(F"Nombre del cliente {i}:  ")
+
+    print("\nServicios")
+    print("1. Corte")
+    print("2. Cepillado")
+    print("3. Tintura")
+
+    servicio = int(input("Seleccione el servicio: "))
+    valor = int(input("Valor pagado: "))
+
+    total_dia += valor
+
+    if servicio == 1:
+        corte += 1
+    elif servicio == 2:
+        cepillado += 1
+    elif servicio == 3:
+        tintura += 1
+    else:
+        print("Servicio no válido")
+
+
+# determinar el servicio más solicitado
+if corte > cepillado and corte > tintura:
+    mas_solicitado = "Corte"
+elif cepillado > corte and cepillado > tintura:
+    mas_solicitado = "Cepillado"
+else:
+    mas_solicitado = "Tintura"
+
+
+print("\n---- RESULTADOS ----")
+print("Total del día:", total_dia)
+print("Clientes que pidieron corte:", corte)
+print("Clientes que pidieron cepillado:", cepillado)
+print("Clientes que pidieron tintura:", tintura)
+print("Servicio más solicitado:", mas_solicitado)
