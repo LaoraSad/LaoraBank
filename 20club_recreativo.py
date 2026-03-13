@@ -43,7 +43,7 @@ while seguir == "si":
     seguir = input("\n¿Desea registrar otra persona? (si/no): ").lower()
 
 
-# determinar plan más vendido
+
 if basico > premium and basico > familiar:
     mas_vendido = "Básico"
 elif premium > basico and premium > familiar:
